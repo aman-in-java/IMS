@@ -1,0 +1,39 @@
+
+[
+  {
+    "id": "item-001",
+    "name": "SKU-1024-BLK: Pro T-Shirt Black",
+    "binderType": "Goods",
+    "tags": ["#apparel", "#q3-promo"]
+  },
+  {
+    "id": "item-002",
+    "name": "Laptop-MBP-16-2023",
+    "binderType": "Assets",
+    "tags": ["#it-equipment", "#fa-code-112"]
+  },
+  {
+    "id": "item-003",
+    "name": "Consulting Services - Tier 1",
+    "binderType": "Services",
+    "tags": ["#professional-services"]
+  },
+  {
+    "id": "item-004",
+    "name": "Deluxe Room Kit",
+    "binderType": "Bookables",
+    "tags": ["#hospitality", "#nested-kit"]
+  },
+  {
+    "id": "item-005",
+    "name": "Demo Kit #7",
+    "binderType": "Trackables",
+    "tags": ["#sales-demo", "#field-asset"]
+  },
+   {
+    "id": "item-006",
+    "name": "Marketing Brochures",
+    "binderType": "Goods",
+    "tags": ["#marketing-materials"]
+  }
+]

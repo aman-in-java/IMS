@@ -1,0 +1,15 @@
+
+[
+  {
+    "id": "user-1",
+    "name": "Alex Carter (Manager)",
+    "email": "alex.carter@example.com",
+    "roleIds": ["role-manager"]
+  },
+  {
+    "id": "user-2",
+    "name": "Benito Rossi (Operator)",
+    "email": "benito.rossi@example.com",
+    "roleIds": ["role-operator"]
+  }
+]

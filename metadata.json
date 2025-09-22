@@ -1,0 +1,5 @@
+{
+  "name": "AIMS: Advanced Inventory Management System",
+  "description": "A comprehensive React application for modeling and managing items, pools, areas, and permissions with advanced 3-pool tracking for inbound shipments and complex inventory scenarios. This system provides detailed insights into stock ownership, custody, and location across a distributed enterprise.",
+  "requestFramePermissions": []
+}

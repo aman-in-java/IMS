@@ -1,0 +1,80 @@
+[
+  {
+    "id": "lot-001",
+    "sku": "item-001",
+    "mpId": "pool-main",
+    "spId": "pool-main",
+    "cpId": "pool-main",
+    "quantity": 150,
+    "locationId": "loc-us-east",
+    "areaId": "area-1",
+    "stockState": "Green",
+    "qualityState": "Green",
+    "supplyState": "Green"
+  },
+  {
+    "id": "lot-002",
+    "sku": "item-001",
+    "mpId": "pool-main",
+    "spId": "pool-supplier-a",
+    "cpId": "pool-main",
+    "quantity": 75,
+    "locationId": "loc-us-east",
+    "areaId": "area-1",
+    "stockState": "Green",
+    "qualityState": "Amber",
+    "supplyState": "Amber",
+    "markingIds": ["mark-hold"]
+  },
+  {
+    "id": "lot-003",
+    "sku": "item-002",
+    "mpId": "pool-assets",
+    "spId": "pool-assets",
+    "cpId": "pool-3pl-us",
+    "quantity": 10,
+    "locationId": "loc-us-west",
+    "stockState": "Green",
+    "qualityState": "Green",
+    "supplyState": "Green"
+  },
+  {
+    "id": "lot-004",
+    "sku": "item-006",
+    "mpId": "pool-supplies",
+    "spId": "pool-supplies",
+    "cpId": "pool-supplies",
+    "quantity": 5000,
+    "locationId": "loc-us-east",
+    "areaId": "area-2",
+    "stockState": "Red",
+    "qualityState": "Red",
+    "supplyState": "Red",
+    "markingIds": ["mark-rework"]
+  },
+  {
+    "id": "lot-005",
+    "sku": "item-001",
+    "mpId": "pool-main",
+    "spId": "pool-supplier-a",
+    "cpId": "pool-3pl-us",
+    "quantity": 25,
+    "locationId": "loc-us-west",
+    "stockState": "Green",
+    "qualityState": "Green",
+    "supplyState": "Green"
+  },
+  {
+    "id": "lot-006",
+    "sku": "item-004",
+    "mpId": "pool-repair",
+    "spId": "pool-supplier-a",
+    "cpId": "pool-main",
+    "quantity": 3,
+    "locationId": "loc-us-east",
+    "areaId": "area-3",
+    "stockState": "Amber",
+    "qualityState": "Green",
+    "supplyState": "Red"
+  }
+]

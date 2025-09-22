@@ -1,0 +1,6 @@
+[
+  { "id": "area-1", "locationId": "loc-us-east", "name": "Receiving Dock", "description": "Primary area for inbound shipments.", "squareFeet": 5000 },
+  { "id": "area-2", "locationId": "loc-us-east", "name": "Main Warehouse Floor", "description": "Main storage for sellable inventory.", "squareFeet": 100000 },
+  { "id": "area-3", "locationId": "loc-us-east", "name": "Quality Control Cage", "description": "Secure area for items pending quality inspection.", "squareFeet": 1200, "isQualityArea": true },
+  { "id": "area-4", "locationId": "loc-us-west", "name": "Shipping Bay", "description": "Area for packing and outbound shipments.", "squareFeet": 4500 }
+]

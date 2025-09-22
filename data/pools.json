@@ -1,0 +1,53 @@
+[
+  {
+    "id": "pool-main",
+    "code": "MAIN-INV",
+    "name": "Main Inventory",
+    "nature": "Inventory",
+    "subtype": "Stock in Trade"
+  },
+  {
+    "id": "pool-assets",
+    "code": "CORP-ASSETS",
+    "name": "Corporate Assets",
+    "nature": "Assets",
+    "subtype": "Fixed Assets"
+  },
+  {
+    "id": "pool-supplies",
+    "code": "OFF-SUP",
+    "name": "Office Supplies",
+    "nature": "Off-Inventory",
+    "subtype": "Office Supplies"
+  },
+  {
+    "id": "pool-marketing-coll",
+    "code": "MKTG-COLL",
+    "name": "Marketing Collaterals",
+    "nature": "Off-Inventory",
+    "subtype": "Marketing Materials",
+    "isNested": true,
+    "parentId": "pool-supplies"
+  },
+  {
+    "id": "pool-repair",
+    "code": "CTRL-REPAIR",
+    "name": "Repair Holding",
+    "nature": "Control Account",
+    "subtype": "Repair"
+  },
+  {
+    "id": "pool-supplier-a",
+    "code": "SUPPLIER-A",
+    "name": "Primary Goods Supplier",
+    "nature": "3rd Party",
+    "subtype": "N/A"
+  },
+  {
+    "id": "pool-3pl-us",
+    "code": "3PL-US-EAST",
+    "name": "3PL US East Warehouse",
+    "nature": "3rd Party",
+    "subtype": "N/A"
+  }
+]

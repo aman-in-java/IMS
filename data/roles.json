@@ -1,0 +1,13 @@
+
+[
+  {
+    "id": "role-manager",
+    "name": "Inventory Manager",
+    "description": "Has full access to manage all aspects of inventory, pools, and areas."
+  },
+  {
+    "id": "role-operator",
+    "name": "Warehouse Operator",
+    "description": "Has view-only access and can perform limited stock actions."
+  }
+]

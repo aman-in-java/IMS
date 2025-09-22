@@ -1,0 +1,19 @@
+
+[
+    {
+        "id": "mark-promo-q3",
+        "color": "blue",
+        "labelText": "Q3 Promo",
+        "promoId": "Q3-FY2024"
+    },
+    {
+        "id": "mark-hold",
+        "color": "yellow",
+        "labelText": "Mgmt Hold"
+    },
+    {
+        "id": "mark-rework",
+        "color": "red",
+        "labelText": "Rework Required"
+    }
+]

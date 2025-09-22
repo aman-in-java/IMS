@@ -1,0 +1,51 @@
+
+[
+  {
+    "roleId": "role-manager",
+    "action": "VIEW_DASHBOARD"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "VIEW_POOLS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "MANAGE_POOLS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "VIEW_LOCATIONS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "MANAGE_LOCATIONS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "VIEW_AREAS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "MANAGE_AREAS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "VIEW_PERMISSIONS"
+  },
+  {
+    "roleId": "role-operator",
+    "action": "VIEW_DASHBOARD"
+  },
+  {
+    "roleId": "role-operator",
+    "action": "VIEW_POOLS"
+  },
+  {
+    "roleId": "role-operator",
+    "action": "VIEW_LOCATIONS"
+  },
+  {
+    "roleId": "role-operator",
+    "action": "VIEW_AREAS"
+  }
+]

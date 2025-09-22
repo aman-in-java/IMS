@@ -1,0 +1,21 @@
+[
+    {
+        "id": "loc-us",
+        "name": "United States",
+        "description": "Operations in the USA"
+    },
+    {
+        "id": "loc-us-east",
+        "name": "East Coast Hub",
+        "description": "Main distribution center for the east coast.",
+        "isNested": true,
+        "parentId": "loc-us"
+    },
+    {
+        "id": "loc-us-west",
+        "name": "West Coast Hub",
+        "description": "Main distribution center for the west coast.",
+        "isNested": true,
+        "parentId": "loc-us"
+    }
+]
