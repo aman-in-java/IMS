@@ -9,6 +9,8 @@ import LocationsScreen from './screens/LocationsScreen';
 import AreasScreen from './screens/AreasScreen';
 import PermissionsScreen from './screens/PermissionsScreen';
 import GenericScreen from './screens/GenericScreen';
+import InboundReceivingScreen from './screens/InboundReceivingScreen';
+import SSCScreen from './screens/SSCScreen';
 import { useAuth } from './hooks/useAuth';
 
 const App: React.FC = () => {
@@ -32,9 +34,9 @@ const App: React.FC = () => {
             <Route path="/pools" element={<PoolsScreen />} />
             <Route path="/locations" element={<LocationsScreen />} />
             <Route path="/zones" element={<AreasScreen />} />
+            <Route path="/ssc" element={<SSCScreen />} />
             <Route path="/permissions" element={<PermissionsScreen />} />
-            <Route path="/binder" element={<GenericScreen title="Binder (Items)" message="Manage all item master data." />} />
-            <Route path="/inbound" element={<GenericScreen title="Inbound Receiving" message="Process and track inbound shipments." />} />
+            <Route path="/inbound" element={<InboundReceivingScreen />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>

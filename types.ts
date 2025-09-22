@@ -22,6 +22,14 @@ export interface Item {
     tags: string[];
 }
 
+export interface StockSelectionCriteria {
+  id: string;
+  areaId: string;
+  poolId: string;
+  status: RAGState;
+  classes: string;
+}
+
 
 export interface DerivedStockState {
   label: string;
@@ -145,7 +153,10 @@ export enum Action {
   MANAGE_LOCATIONS = 'MANAGE_LOCATIONS',
   VIEW_AREAS = 'VIEW_AREAS',
   MANAGE_AREAS = 'MANAGE_AREAS',
+  VIEW_SSC = 'VIEW_SSC',
+  MANAGE_SSC = 'MANAGE_SSC',
   VIEW_PERMISSIONS = 'VIEW_PERMISSIONS',
+  MANAGE_PERMISSIONS = 'MANAGE_PERMISSIONS',
   // More granular actions can be added here
   ALLOCATE_STOCK = 'ALLOCATE_STOCK',
   CHANGE_STOCK_STATE = 'CHANGE_STOCK_STATE',
@@ -157,5 +168,6 @@ export interface PermissionGrant {
   constraints?: {
     allowedPoolIds?: string[];
     allowedAreaIds?: string[];
+    matchingSscIds?: string[]; // New: Link permission to SSC rules
   };
 }

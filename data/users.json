@@ -11,5 +11,11 @@
     "name": "Benito Rossi (Operator)",
     "email": "benito.rossi@example.com",
     "roleIds": ["role-operator"]
+  },
+  {
+    "id": "user-3",
+    "name": "Charlie Davis (Operator)",
+    "email": "charlie.davis@example.com",
+    "roleIds": ["role-operator"]
   }
 ]

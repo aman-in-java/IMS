@@ -30,7 +30,23 @@
   },
   {
     "roleId": "role-manager",
+    "action": "VIEW_SSC"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "MANAGE_SSC"
+  },
+  {
+    "roleId": "role-manager",
     "action": "VIEW_PERMISSIONS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "MANAGE_PERMISSIONS"
+  },
+  {
+    "roleId": "role-manager",
+    "action": "CHANGE_STOCK_STATE"
   },
   {
     "roleId": "role-operator",
@@ -47,5 +63,16 @@
   {
     "roleId": "role-operator",
     "action": "VIEW_AREAS"
+  },
+  {
+    "roleId": "role-operator",
+    "action": "VIEW_SSC"
+  },
+  {
+    "roleId": "role-operator",
+    "action": "CHANGE_STOCK_STATE",
+    "constraints": {
+      "matchingSscIds": ["ssc-2"]
+    }
   }
 ]

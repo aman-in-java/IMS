@@ -63,6 +63,7 @@ export const ICON_MAP = {
   // Fix: Added missing 'Locations' icon.
   Locations: <IconPlaceholder />,
   Areas: <IconPlaceholder />,
+  SSC: <IconPlaceholder />,
   Inbound: <IconPlaceholder />,
   Permissions: <IconPlaceholder />,
   Logo: <LogoIcon />,

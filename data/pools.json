@@ -49,5 +49,12 @@
     "name": "3PL US East Warehouse",
     "nature": "3rd Party",
     "subtype": "N/A"
+  },
+  {
+    "id": "pool-receiving",
+    "code": "CTRL-RECV",
+    "name": "Receiving Holding",
+    "nature": "Control Account",
+    "subtype": "Purchase"
   }
 ]

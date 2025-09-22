@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ssc-1",
+    "areaId": "area-2",
+    "poolId": "pool-main",
+    "status": "Green",
+    "classes": "fast-moving, priority-a, bulk"
+  },
+  {
+    "id": "ssc-2",
+    "areaId": "area-3",
+    "poolId": "pool-repair",
+    "status": "Amber",
+    "classes": "qc-hold, high-value"
+  },
+  {
+    "id": "ssc-3",
+    "areaId": "area-2",
+    "poolId": "pool-supplies",
+    "status": "Red",
+    "classes": "reorder, low-stock"
+  }
+]

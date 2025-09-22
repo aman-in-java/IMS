@@ -7,7 +7,7 @@
     "cpId": "pool-main",
     "quantity": 150,
     "locationId": "loc-us-east",
-    "areaId": "area-1",
+    "areaId": "area-2",
     "stockState": "Green",
     "qualityState": "Green",
     "supplyState": "Green"
@@ -15,16 +15,15 @@
   {
     "id": "lot-002",
     "sku": "item-001",
-    "mpId": "pool-main",
+    "mpId": "pool-receiving",
     "spId": "pool-supplier-a",
-    "cpId": "pool-main",
+    "cpId": "pool-receiving",
     "quantity": 75,
     "locationId": "loc-us-east",
     "areaId": "area-1",
-    "stockState": "Green",
+    "stockState": "Amber",
     "qualityState": "Amber",
-    "supplyState": "Amber",
-    "markingIds": ["mark-hold"]
+    "supplyState": "Amber"
   },
   {
     "id": "lot-003",
@@ -76,5 +75,18 @@
     "stockState": "Amber",
     "qualityState": "Green",
     "supplyState": "Red"
+  },
+  {
+    "id": "lot-007",
+    "sku": "item-006",
+    "mpId": "pool-receiving",
+    "spId": "pool-supplier-a",
+    "cpId": "pool-receiving",
+    "quantity": 2500,
+    "locationId": "loc-us-east",
+    "areaId": "area-1",
+    "stockState": "Amber",
+    "qualityState": "Amber",
+    "supplyState": "Amber"
   }
 ]

@@ -1,5 +1,5 @@
 // services/api.ts
-import type { StockLot, Pool, Location, Area, Marking, User, Role, PermissionGrant } from '../types';
+import type { StockLot, Pool, Location, Area, Marking, User, Role, PermissionGrant, Item, StockSelectionCriteria } from '../types';
 
 class DataService {
   // Private stores for our data
@@ -11,6 +11,8 @@ class DataService {
   private users: User[] = [];
   private roles: Role[] = [];
   private permissions: PermissionGrant[] = [];
+  private items: Item[] = [];
+  private stockSelectionCriteria: StockSelectionCriteria[] = [];
   private isInitialized = false;
 
   private async _fetch<T>(url: string): Promise<T> {
@@ -31,7 +33,7 @@ class DataService {
 
     // Fetch all data in parallel for efficiency
     const [
-      pools, locations, areas, stockLots, markings, users, roles, permissions
+      pools, locations, areas, stockLots, markings, users, roles, permissions, items, sscs
     ] = await Promise.all([
       this._fetch<Pool[]>('/data/pools.json'),
       this._fetch<Location[]>('/data/locations.json'),
@@ -41,6 +43,8 @@ class DataService {
       this._fetch<User[]>('/data/users.json'),
       this._fetch<Role[]>('/data/roles.json'),
       this._fetch<PermissionGrant[]>('/data/permissions.json'),
+      this._fetch<Item[]>('/data/items.json'),
+      this._fetch<StockSelectionCriteria[]>('/data/stockSelectionCriteria.json'),
     ]);
 
     this.pools = pools;
@@ -51,6 +55,8 @@ class DataService {
     this.users = users;
     this.roles = roles;
     this.permissions = permissions;
+    this.items = items;
+    this.stockSelectionCriteria = sscs;
 
     this.isInitialized = true;
     console.log("Data service initialized successfully.");
@@ -65,6 +71,8 @@ class DataService {
   getUsers = (): User[] => [...this.users];
   getRoles = (): Role[] => [...this.roles];
   getPermissions = (): PermissionGrant[] => [...this.permissions];
+  getItems = (): Item[] => [...this.items];
+  getStockSelectionCriteria = (): StockSelectionCriteria[] => [...this.stockSelectionCriteria];
 
   // --- CRUD Operations (Asynchronous Simulation) ---
   private create = <T extends {id: string}>(store: T[], newItem: Omit<T, 'id'>, entityName: string): Promise<T> => {
@@ -119,6 +127,45 @@ class DataService {
   createArea = (area: Omit<Area, 'id'>) => this.create(this.areas, area, 'area');
   updateArea = (area: Area) => this.update(this.areas, area);
   deleteArea = (id: string) => this.del(this.areas, id);
+
+  // StockLots CRUD
+  createStockLot = (stockLot: Omit<StockLot, 'id'>) => this.create(this.stockLots, stockLot, 'lot');
+  updateStockLot = (stockLot: StockLot) => this.update(this.stockLots, stockLot);
+
+  // SSC CRUD
+  createSSC = (ssc: Omit<StockSelectionCriteria, 'id'>) => this.create(this.stockSelectionCriteria, ssc, 'ssc');
+  updateSSC = (ssc: StockSelectionCriteria) => this.update(this.stockSelectionCriteria, ssc);
+  deleteSSC = (id: string) => this.del(this.stockSelectionCriteria, id);
+
+  // Permissions CRUD
+  createPermissionGrant = (grant: PermissionGrant): Promise<PermissionGrant> => {
+    return new Promise(resolve => setTimeout(() => {
+      this.permissions.push(grant);
+      resolve(grant);
+    }, 300));
+  }
+
+  updatePermissionGrant = (index: number, grant: PermissionGrant): Promise<PermissionGrant> => {
+    return new Promise((resolve, reject) => setTimeout(() => {
+      if (index >= 0 && index < this.permissions.length) {
+        this.permissions[index] = grant;
+        resolve(grant);
+      } else {
+        reject(new Error('Permission grant not found at index'));
+      }
+    }, 300));
+  }
+
+  deletePermissionGrant = (index: number): Promise<void> => {
+    return new Promise((resolve, reject) => setTimeout(() => {
+      if (index >= 0 && index < this.permissions.length) {
+        this.permissions.splice(index, 1);
+        resolve();
+      } else {
+        reject(new Error('Permission grant not found at index'));
+      }
+    }, 300));
+  }
 }
 
 // Export a single instance of the service
